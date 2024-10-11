@@ -29,10 +29,15 @@ img {
 }
 
 .container {
-  width: 1158;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* ---------------------------------------------HEADER--------------------------------------------- */
@@ -52,7 +57,7 @@ img {
   align-items: center;
 }
 
-.header .nav-logo {
+.nav-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -60,9 +65,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-}
-
-.nav-logo {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-right: 76px;
@@ -151,9 +153,6 @@ img {
   cursor: pointer;
   background: #4d5ae5;
   display: block;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
@@ -168,11 +167,6 @@ img {
 }
 
 /* ---------------------------------------------ADVANTAGES--------------------------------------------- */
-
-.advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 
 .advantages-title {
   position: absolute;
@@ -191,11 +185,10 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
-  width: calc((100% - 72) / 4);
 }
 
 .advantages-item {
-  width: 264px;
+  width: calc((100% - 72px) / 4);
 }
 
 .advantages-subtitle {
@@ -216,8 +209,6 @@ img {
 
 .team {
   background: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .team-title {
@@ -236,7 +227,6 @@ img {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  width: calc((100% - 72) / 4);
 }
 
 .team-member {
@@ -244,14 +234,11 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: calc((100% - 72px) / 4);
   background-color: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-.member-photo {
-  margin-bottom: 32px;
 }
 
 .member-descr {
@@ -259,14 +246,12 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 32px;
   margin-bottom: 32px;
+  gap: 8px;
 }
 
 .member-name {
-  margin-bottom: 8px;
-}
-
-.member-photo .member-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -284,11 +269,6 @@ img {
 
 /* ---------------------------------------------OUR PORTFOLIO--------------------------------------------- */
 
-.portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -305,11 +285,20 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 24px 48px;
+  gap: 48px 24px;
 }
 
 .portfolio-item {
-  width: calc((100% - 48) / 3);
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-item-descr {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
 
 .portfolio-subtitle {
@@ -318,6 +307,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-descr {
@@ -355,5 +345,5 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  width: 264px;
+  max-width: 264px;
 }
